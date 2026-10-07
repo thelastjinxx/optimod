@@ -1,31 +1,15 @@
 {
-	"schemaVersion": 1,
-	"id": "optimod",
-	"version": "${version}",
-	"name": "Optimod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/optimod/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.optimod.Optimod"
-		]
-	},
-	"mixins": [
-		"optimod.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "optimod",
+  "version": "0.2.0",
+  "name": "OptiMod",
+  "description": "Entity render optimizations that supplement Sodium and friends.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.optimod.OptiModClient"],
+    "modmenu": ["com.example.optimod.compat.OptiModMenu"]
+  },
+  "mixins": ["optimod.mixins.json"],
+  "depends": { "fabricloader": ">=0.17.0", "minecraft": "1.21.11", "java": ">=21" },
+  "suggests": { "modmenu": "*", "cloth-config": "*" }
 }

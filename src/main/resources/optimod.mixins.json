@@ -1,14 +1,7 @@
 {
-	"required": true,
-	"package": "com.example.optimod.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "com.example.optimod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["EntityRendererMixin", "EntityRenderDispatcherMixin", "MinecraftMixin"],
+  "injectors": { "defaultRequire": 1 }
 }

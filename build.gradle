@@ -69,3 +69,13 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+repositories {
+    maven { url = "https://maven.shedaniel.me/" }
+    maven { url = "https://maven.terraformersmc.com/releases/" }
+}
+
+dependencies {
+    modImplementation "me.shedaniel.cloth:cloth-config-fabric:21.11.153"
+    modImplementation "com.terraformersmc:modmenu:17.0.0"
+}

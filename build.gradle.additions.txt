@@ -1,0 +1,11 @@
+// Add to build.gradle. Check the latest versions for 1.21.11 on Modrinth/Maven.
+
+repositories {
+    maven { url = "https://maven.shedaniel.me/" }
+    maven { url = "https://maven.terraformersmc.com/releases/" }
+}
+
+dependencies {
+    modImplementation "me.shedaniel.cloth:cloth-config-fabric:<CLOTH_VERSION>"
+    modImplementation "com.terraformersmc:modmenu:<MODMENU_VERSION>"
+}
