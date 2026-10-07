@@ -92,8 +92,8 @@ public final class EntityLod {
         }
         if (state instanceof ArmedEntityRenderState a) {
             // FRAGILE: held item fields
-            a.rightHandItem.clear();
-            a.leftHandItem.clear();
+            a.rightHandItemState.clear();
+            a.leftHandItemState.clear();
         }
     }
 
